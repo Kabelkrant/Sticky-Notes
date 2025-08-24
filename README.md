@@ -15,7 +15,7 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 **Instructions:**
 1. Upload all the files to your host
 2. Create a database (utf8mb4_unicode_ci)
-3. Use the provided SQL-file to create the table
+3. Create the table (use database_setup.sql)
 4. Edit config.php
 
 **Things to consider:**
