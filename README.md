@@ -1,2 +1,24 @@
 # Sticky-Notes
 Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentication. 
+
+
+You can:
+- Create, modify and delete Sticky Notes
+- Change it's color
+- Move it around
+
+Good to know:
+- All data is stored in a single mySQL table
+- There is no authentication or multiuser. Anyone that knows the URL can add and modify! Use at own risk! Provide your own protection!
+- It comes protected with CSRF-tokens
+- Works with mouse and touch
+
+Requirements:
+- A webserver
+- PHP 8.4
+- MySQL 8.0 or MariaDB 10.11 or newer
+
+Instructions:
+1. Upload all the files to your host
+2. Create a database with the provided SQL-file
+3. Edit config.php
