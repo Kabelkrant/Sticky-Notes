@@ -25,7 +25,7 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 **Notes:**
 - All data is stored in a single mySQL table.
 - There is no authentication. Anyone that knows the URL can add and modify! Use at own risk! Provide your own protection!
-- It comes protected with CSRF-tokens.
+- It uses CSRF-tokens against bots.
 - Works with mouse and touch.
 - HTML gets converted to readable text.
 
