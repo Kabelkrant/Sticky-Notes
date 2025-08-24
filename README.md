@@ -20,5 +20,6 @@ Requirements:
 
 Instructions:
 1. Upload all the files to your host
-2. Create a database with the provided SQL-file
-3. Edit config.php
+2. Create a database (utf8mb4_unicode_ci)
+3. Use the provided SQL-file to create the table
+4. Edit config.php
