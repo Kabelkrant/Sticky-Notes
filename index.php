@@ -56,29 +56,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $notes = $pdo->query('SELECT * FROM notes ORDER BY updated_at DESC')->fetchAll();
 ?>
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Notities</title>
+  <title>Sticky Notes</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
   <header>
-    <h1>🗒️ Notities</h1>
-    <button id="newBtn">Nieuw</button>
+    <h1>🗒️ Sticky Notes</h1>
+    <button id="newBtn">New</button>
   </header>
 
   <dialog id="newDialog">
     <form method="post">
       <input type="hidden" name="csrf" value="<?= e($csrf) ?>">
       <input type="hidden" name="action" value="create">
-      <input type="text" name="title" placeholder="Titel" required>
+      <input type="text" name="title" placeholder="Title" required>
       <input type="color" name="color" value="#FFF59D">
-      <textarea name="body" placeholder="Notitie..." required></textarea>
+      <textarea name="body" placeholder="Note..." required></textarea>
       <menu>
-        <button type="reset" id="cancelBtn">Annuleren</button>
-        <button type="submit">Opslaan</button>
+        <button type="reset" id="cancelBtn">Cancel</button>
+        <button type="submit">Save</button>
       </menu>
     </form>
   </dialog>
@@ -92,8 +92,8 @@ $notes = $pdo->query('SELECT * FROM notes ORDER BY updated_at DESC')->fetchAll()
       <input type="color" name="color" id="editColor" value="#FFF59D">
       <textarea name="body" id="editBody" required></textarea>
       <menu>
-        <button type="button" id="cancelEdit">Annuleren</button>
-        <button type="submit">Opslaan</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+        <button type="submit">Save</button>
       </menu>
     </form>
   </dialog>
@@ -102,12 +102,12 @@ $notes = $pdo->query('SELECT * FROM notes ORDER BY updated_at DESC')->fetchAll()
     <?php foreach ($notes as $n): ?>
       <div class="note" data-id="<?= (int)$n['id'] ?>" data-title="<?= e($n['title']) ?>" data-body="<?= e($n['body']) ?>" data-color="<?= e($n['color']) ?>" style="left:<?= (int)$n['pos_x'] ?>px; top:<?= (int)$n['pos_y'] ?>px; background:<?= e($n['color']) ?>;">
         <div class="note-actions">
-          <button type="button" class="edit-btn" title="Bewerken">✏️</button>
+          <button type="button" class="edit-btn" title="Modify">✏️</button>
           <form method="post" style="margin:0;">
             <input type="hidden" name="csrf" value="<?= e($csrf) ?>">
             <input type="hidden" name="action" value="delete">
             <input type="hidden" name="id" value="<?= (int)$n['id'] ?>">
-            <button type="submit" class="delete-btn" title="Verwijderen">🗑️</button>
+            <button type="submit" class="delete-btn" title="Delete">🗑️</button>
           </form>
         </div>
         <strong class="title-text"><?= e($n['title']) ?></strong>
@@ -141,11 +141,11 @@ board.addEventListener('click', (e) => {
   editDialog.showModal();
 });
 
-// Bevestigingsprompt bij verwijderen
+// Confirmation prompt on deletion
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('.delete-btn');
   if (!btn) return;
-  if (!confirm('Weet je zeker dat je deze notitie wilt verwijderen?')) {
+  if (!confirm('Are you sure you want to delete this Sticky Note?')) {
     e.preventDefault();
   }
 });
