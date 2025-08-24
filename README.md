@@ -2,6 +2,9 @@
 Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentication. 
 
 
+![Screenshot of the Sticky Notes index page](screenshots/main.png)
+
+
 **You can:**
 - Create, modify and delete a Sticky Note
 - Change it's color
