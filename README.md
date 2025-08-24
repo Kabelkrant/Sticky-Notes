@@ -8,10 +8,11 @@ You can:
 - Move it around
 
 Good to know:
-- All data is stored in a single mySQL table
+- All data is stored in a single mySQL table.
 - There is no authentication. Anyone that knows the URL can add and modify! Use at own risk! Provide your own protection!
-- It comes protected with CSRF-tokens
-- Works with mouse and touch
+- It comes protected with CSRF-tokens.
+- Works with mouse and touch.
+- HTML gets converted to readable text.
 
 Requirements:
 - A webserver
