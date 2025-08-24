@@ -1,5 +1,5 @@
 # Sticky Notes
-Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentication. 
+Basic Sticky Notes app running on PHP and MySQL. Desktop and mobile-friendly. Single page. No authentication. 
 
 
 ![Screenshot of the Sticky Notes index page](screenshots/main.png)
