@@ -10,7 +10,6 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 - Create, modify and delete a Sticky Note
 - Change it's color
 - Move it around
-- Endless canvas with horizontal and vertical scrolling
 
 **Requirements:**
 - A webserver
