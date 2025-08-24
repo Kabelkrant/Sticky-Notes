@@ -8,7 +8,7 @@ Basic Sticky Notes app running on PHP and MySQL. Desktop and mobile-friendly. Si
 
 **You can:**
 - Create, modify and delete a Sticky Note
-- Change it's color
+- Change its color
 - Move it around
 
 **Requirements:**
