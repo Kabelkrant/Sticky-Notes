@@ -4,6 +4,7 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 
 ![Screenshot of the Sticky Notes index page](screenshots/main.png)
 
+[Online Demo](https://onderzone.nl/notities)
 
 **You can:**
 - Create, modify and delete a Sticky Note
