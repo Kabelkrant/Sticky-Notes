@@ -22,7 +22,7 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 3. Create the table (use database_setup.sql)
 4. Edit config.php
 
-**Things to consider:**
+**Notes:**
 - All data is stored in a single mySQL table.
 - There is no authentication. Anyone that knows the URL can add and modify! Use at own risk! Provide your own protection!
 - It comes protected with CSRF-tokens.
