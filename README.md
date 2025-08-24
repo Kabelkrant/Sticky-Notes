@@ -32,3 +32,4 @@ Basic Sticky Notes for PHP and MySQL. Desktop and mobile-friendly. No authentica
 **To do:**
 - Basic formatting (bold, italic, lists)
 - Clickable links
+- Dark Mode
